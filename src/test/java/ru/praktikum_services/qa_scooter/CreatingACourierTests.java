@@ -8,8 +8,7 @@ import io.restassured.response.Response;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
+
 import ru.praktikum_services.qa_scooter.POJO.Courier;
 
 
@@ -19,20 +18,11 @@ import static org.hamcrest.Matchers.hasKey;
 import static ru.praktikum_services.qa_scooter.constants.Constants.*;
 import static org.junit.Assert.assertEquals;
 
-@RunWith(Parameterized.class) // Параметризирую тест на создание курьера без одно из обязательных параметров
+
 public class CreatingACourierTests {
     private Courier courier; // Нужно, чтобы передавать объект между Before и After
-    // Параметры теста
-    private final String login;
-    private final String password;
-    private final String firstName;
 
-    // Конструктор для параметров
-    public CreatingACourierTests(String login, String password, String firstName) {
-        this.login = login;
-        this.password = password;
-        this.firstName = firstName;
-    }
+
 
     @Before
     public void setUp() {
@@ -85,20 +75,34 @@ public class CreatingACourierTests {
                 CREATE_COURIER_WITH_THE_SAME_LOGIN_MESSAGE, actualMessage);
     }
 
-    @Parameterized.Parameters
-    public static Object[][] testData() {
-        return new Object[][]{
-                // login, password, firstName
-                {"", "1234", "Gleb"}, {"Koshe4kin", "", "Gleb"}
-        };
-    }
+
 
     @Test
-    @DisplayName("Создание курьера без обязательных параметров")
+    @DisplayName("Создание курьера без login")
     @Description("Проверяем что тело ответа содержит параметр 'message' со значением 'Недостаточно данных для создания учетной записи' и статус-кодом = 400")
-    public void creatingCourierWithoutRequiredFieldsTest() {
+    public void creatingCourierWithoutRequiredFieldLoginTest() {
         // Формируем тело запроса
-        courier = new Courier(login, password, firstName);
+        courier = new Courier("", "1234", "Gleb");
+        // Отправляем запрос на создание курьера
+        Response response = courier.createCourier(CREATE_COURIER_PATH);
+        // Проверяем статус код
+        int actualStatusCode = response.getStatusCode();
+        assertEquals("Статус-код ответа не совпадает", CREATE_COURIER_WITHOUT_PASSWORD_OR_LOGIN_STATUS_CODE,
+                actualStatusCode);
+        // Проверяем наличие параметра message
+        assertThat("Параметр 'message' должен присутствовать в ответе", response.jsonPath()
+                .getMap("$"), hasKey("message"));
+        // Проверяем тело ответа
+        String actualMessage = response.jsonPath().getString("message");
+        assertEquals("Неправильное значение параметра 'message' в теле ответа.",
+                CREATE_COURIER_WITHOUT_PASSWORD_OR_LOGIN_MESSAGE, actualMessage);
+    }
+    @Test
+    @DisplayName("Создание курьера без password")
+    @Description("Проверяем что тело ответа содержит параметр 'message' со значением 'Недостаточно данных для создания учетной записи' и статус-кодом = 400")
+    public void creatingCourierWithoutRequiredFieldPasswordTest() {
+        // Формируем тело запроса
+        courier = new Courier("Koshe4kin", "", "Gleb");
         // Отправляем запрос на создание курьера
         Response response = courier.createCourier(CREATE_COURIER_PATH);
         // Проверяем статус код

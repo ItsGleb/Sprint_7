@@ -7,7 +7,7 @@
     <list default="true" id="043c2332-70f1-4240-a43a-9ff77a0bf93e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingACourierTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingACourierTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,22 @@
     "last_opened_file_path": "E:/_YAP_rep/Sprint_7/Sprint_7"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest">
+  <component name="RunManager" selected="JUnit.CreatingACourierTests">
+    <configuration name="CreatingACourierTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreatingACourierTests.courierCreationSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
@@ -107,10 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreatingACourierTests" />
+        <item itemvalue="JUnit.CreatingACourierTests.courierCreationSuccessTest" />
         <item itemvalue="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest" />
         <item itemvalue="JUnit.CreatingACourierTests.creatingACourierWithoutLoginTest" />
         <item itemvalue="JUnit.CreatingACourierTests.creatingTwoAccountsWithTheSameLoginTest" />
-        <item itemvalue="JUnit.CreatingACourierTests.courierCreationSuccessTest" />
       </list>
     </recent_temporary>
   </component>
