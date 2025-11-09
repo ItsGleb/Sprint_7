@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043c2332-70f1-4240-a43a-9ff77a0bf93e" name="Changes" comment="" />
+    <list default="true" id="043c2332-70f1-4240-a43a-9ff77a0bf93e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,9 +36,84 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/_YAP_rep/Sprint_7/Sprint_7"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest">
+    <configuration name="CreatingACourierTests.courierCreationSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
+      <option name="METHOD_NAME" value="courierCreationSuccessTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatingACourierTests.creatingACourierWithoutLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
+      <option name="METHOD_NAME" value="creatingACourierWithoutLoginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
+      <option name="METHOD_NAME" value="creatingCourierWithoutRequiredFieldsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatingACourierTests.creatingTwoAccountsWithTheSameLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
+      <option name="METHOD_NAME" value="creatingTwoAccountsWithTheSameLoginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest" />
+        <item itemvalue="JUnit.CreatingACourierTests.creatingACourierWithoutLoginTest" />
+        <item itemvalue="JUnit.CreatingACourierTests.creatingTwoAccountsWithTheSameLoginTest" />
+        <item itemvalue="JUnit.CreatingACourierTests.courierCreationSuccessTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
