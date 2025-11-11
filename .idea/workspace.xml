@@ -7,6 +7,8 @@
     <list default="true" id="043c2332-70f1-4240-a43a-9ff77a0bf93e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/POJO/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/POJO/Courier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingACourierTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingACourierTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,15 +39,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/_YAP_rep/Sprint_7/Sprint_7"
+    "last_opened_file_path": "E:/_YAP_rep/REST_ASSURED_study"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CreatingACourierTests">
+  <component name="RunManager" selected="JUnit.СourierLoginTests.courierLoginSuccessTest">
     <configuration name="CreatingACourierTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.steps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,7 +62,7 @@
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.steps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,7 +74,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatingACourierTests.creatingACourierWithoutLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreatingACourierTests.creatingCourierWithoutRequiredFieldLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +84,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
       <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
-      <option name="METHOD_NAME" value="creatingACourierWithoutLoginTest" />
+      <option name="METHOD_NAME" value="creatingCourierWithoutRequiredFieldLoginTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,7 +94,7 @@
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.steps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatingACourierTests.creatingTwoAccountsWithTheSameLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="СourierLoginTests.courierLoginSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +115,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
-      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
-      <option name="METHOD_NAME" value="creatingTwoAccountsWithTheSameLoginTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.СourierLoginTests" />
+      <option name="METHOD_NAME" value="courierLoginSuccessTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreatingACourierTests" />
+        <item itemvalue="JUnit.СourierLoginTests.courierLoginSuccessTest" />
         <item itemvalue="JUnit.CreatingACourierTests.courierCreationSuccessTest" />
+        <item itemvalue="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldLoginTest" />
+        <item itemvalue="JUnit.CreatingACourierTests" />
         <item itemvalue="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest" />
-        <item itemvalue="JUnit.CreatingACourierTests.creatingACourierWithoutLoginTest" />
-        <item itemvalue="JUnit.CreatingACourierTests.creatingTwoAccountsWithTheSameLoginTest" />
       </list>
     </recent_temporary>
   </component>
