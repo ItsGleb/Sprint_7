@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="043c2332-70f1-4240-a43a-9ff77a0bf93e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/POJO/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/POJO/Courier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/general_assert/GeneralAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/general_assert/GeneralAssert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/steps/Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingACourierTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingACourierTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/СourierLoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/СourierLoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +40,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/_YAP_rep/REST_ASSURED_study"
+    "last_opened_file_path": "E:/_YAP_rep/Sprint_7/Sprint_7"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.СourierLoginTests.courierLoginSuccessTest">
+  <component name="RunManager" selected="JUnit.CreatingOrderTests.createOrderTest">
     <configuration name="CreatingACourierTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
@@ -90,17 +91,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreatingOrderTests.createOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.steps.*" />
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
-      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
-      <option name="METHOD_NAME" value="creatingCourierWithoutRequiredFieldsTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingOrderTests" />
+      <option name="METHOD_NAME" value="createOrderTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.СourierLoginTests.courierLoginSuccessTest" />
+        <item itemvalue="JUnit.CreatingOrderTests.createOrderTest" />
         <item itemvalue="JUnit.CreatingACourierTests.courierCreationSuccessTest" />
+        <item itemvalue="JUnit.СourierLoginTests.courierLoginSuccessTest" />
         <item itemvalue="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldLoginTest" />
         <item itemvalue="JUnit.CreatingACourierTests" />
-        <item itemvalue="JUnit.CreatingACourierTests.creatingCourierWithoutRequiredFieldsTest" />
       </list>
     </recent_temporary>
   </component>

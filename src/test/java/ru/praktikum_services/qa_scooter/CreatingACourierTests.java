@@ -14,8 +14,6 @@ import ru.praktikum_services.qa_scooter.steps.Steps;
 
 import java.net.HttpURLConnection;
 
-
-
 import static ru.praktikum_services.qa_scooter.constants.Constants.*;
 
 import static ru.praktikum_services.qa_scooter.general_assert.GeneralAssert.*;
@@ -80,7 +78,6 @@ public class CreatingACourierTests {
 
     }
 
-
     @Test
     @DisplayName("Создание курьера без login")
     @Description("Проверяем что тело ответа содержит параметр 'message' со значением 'Недостаточно данных " +
@@ -127,6 +124,29 @@ public class CreatingACourierTests {
 
     }
 
+
+    @Test
+    @DisplayName("Создание курьера без name")
+    @Description("Проверяем что тело ответа содержит параметр 'message' со значением " +
+            "'Недостаточно данных для создания учетной записи' и статус-кодом = 400")
+    public void creatingCourierWithoutRequiredFieldNameTest() {
+        // Формируем тело запроса
+        courier = new Courier("Koshe4kin", "1234", "");
+
+        // Отправляем запрос на создание курьера
+        Response response = steps.createCourier(courier, CREATE_COURIER_PATH);
+
+        // Проверяем статус код
+        assertStatusCode(HttpURLConnection.HTTP_BAD_REQUEST, response);
+
+        // Проверяем наличие параметра message
+        assertResponseHasKey("message", response);
+
+        // Проверяем тело ответа
+        assertResponseKeyValueIsCorrect("message", CREATE_COURIER_WITHOUT_PASSWORD_OR_LOGIN_MESSAGE,
+                response);
+
+    }
 
     @After
     public void deletingTheCreatedData() {

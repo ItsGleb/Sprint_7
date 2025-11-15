@@ -17,6 +17,7 @@ import static ru.praktikum_services.qa_scooter.constants.Constants.*;
 import static ru.praktikum_services.qa_scooter.general_assert.GeneralAssert.*;
 import static ru.praktikum_services.qa_scooter.general_assert.GeneralAssert.assertStatusCode;
 
+// Внимательно перечитать проверки которые хочет яндекс . Возможно что-то упускаю
 public class СourierLoginTests {
 
     private Courier courier;

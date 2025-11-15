@@ -1,15 +1,9 @@
 package ru.praktikum_services.qa_scooter.general_assert;
-
-
 import io.restassured.response.Response;
-
-
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertEquals;
-
 
 public class GeneralAssert {
 

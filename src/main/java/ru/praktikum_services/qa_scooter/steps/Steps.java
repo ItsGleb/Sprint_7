@@ -4,14 +4,13 @@ import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 import ru.praktikum_services.qa_scooter.POJO.Courier;
+import ru.praktikum_services.qa_scooter.POJO.OrderList;
 
 import java.net.HttpURLConnection;
 import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-
-
 
 public class Steps {
 
@@ -42,8 +41,8 @@ public class Steps {
     @Step("Логин курьера")
     public Response loginCourier(Courier courier, String url_path) {
         Map<String, String> loginUserJson = new HashMap<>(); // Нам нужно для создания тела запроса
-        loginUserJson.put("login", courier.getLogin()); // Создаем параметр login со значением экземпляра класса который вызывает метод
-        loginUserJson.put("password", courier.getPassword()); // Создаем параметр password со значением экземпляра класса который вызывает метод
+        loginUserJson.put("login", courier.getLogin()); // Создаем параметр login
+        loginUserJson.put("password", courier.getPassword()); // Создаем параметр password
         Response response =
                 given()
                         .header("Content-Type", "application/json")
@@ -57,8 +56,8 @@ public class Steps {
     @Step("Удалить курьера")
     public Response deleteCourier(String url_path, int id) {
         Map<String, String> userDeleteBody = new HashMap<>();
-        userDeleteBody.put("id",String.valueOf(id));
-        Response response =given()
+        userDeleteBody.put("id", String.valueOf(id));
+        Response response = given()
                 .body(userDeleteBody)
                 .when()
                 .delete(url_path + id);
@@ -67,10 +66,11 @@ public class Steps {
         }
         return response;
     }
+
     @Step("Удаление курьера без возможности обработать ответ")
-    public void justDeleteCourier(String url_path, int id){
+    public void justDeleteCourier(String url_path, int id) {
         Map<String, String> userDeleteBody = new HashMap<>();
-        userDeleteBody.put("id",String.valueOf(id));
+        userDeleteBody.put("id", String.valueOf(id));
         Response response =
                 given()
                         .body(userDeleteBody)
@@ -80,13 +80,25 @@ public class Steps {
             System.out.println("Курьер с ID = " + id + " был успешно удален");
         }
     }
+
     @Step("Создание курьера без возможности обработать ответ")
     public void justCreateCourier(Courier courier, String url_path) {
+
+        given()
+                .header("Content-Type", "application/json")
+                .body(courier)
+                .when()
+                .post(url_path);
+    }
+
+    @Step("Создание заказа")
+    public Response createOrder(OrderList orderList, String url_path) {
         Response response =
                 given()
                         .header("Content-Type", "application/json")
-                        .body(courier)
+                        .body(orderList)
                         .when()
                         .post(url_path);
+        return response;
     }
 }
