@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 import ru.praktikum_services.qa_scooter.POJO.Courier;
-import ru.praktikum_services.qa_scooter.POJO.OrderList;
+import ru.praktikum_services.qa_scooter.POJO.Order;
 
 import java.net.HttpURLConnection;
 import java.util.HashMap;
@@ -92,13 +92,21 @@ public class Steps {
     }
 
     @Step("Создание заказа")
-    public Response createOrder(OrderList orderList, String url_path) {
+    public Response createOrder(Order order, String url_path) {
         Response response =
                 given()
                         .header("Content-Type", "application/json")
-                        .body(orderList)
+                        .body(order)
                         .when()
                         .post(url_path);
+        return response;
+    }
+
+    @Step("Получение списка заказов без параметров")
+    public Response getOrderList(String url_path){
+        Response response =
+                given()
+                        .get(url_path);
         return response;
     }
 }

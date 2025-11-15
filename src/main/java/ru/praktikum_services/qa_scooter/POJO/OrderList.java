@@ -1,23 +1,35 @@
 package ru.praktikum_services.qa_scooter.POJO;
 
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class OrderList {
+    private Integer id;
+    private Integer courierId;
     private String firstName;
     private String lastName;
     private String address;
     private String metroStation;
     private String phone;
     private Integer rentTime;
-    private String deliveryDate;
-    private String comment;
-    private List<String> color;
+    private Date deliveryDate;
     private Integer track;
+    private List<String> color;
+    private String comment;
+    private Date createdAt;
+    private Date updatedAt;
+    private Integer status;
+    // Конструктор по умолчанию
+    public OrderList() {
+    }
 
-
-    public OrderList(String firstName, String lastName, String address, String metroStation, String phone,
-                     Integer rentTime, String deliveryDate, String comment, List<String> color) {
+    // Конструктор со всеми полями
+    public OrderList(Integer id, Integer courierId, String firstName, String lastName,
+                 String address, String metroStation, String phone, Integer rentTime,
+                 Date deliveryDate, Integer track, List<String> color, String comment,
+                 Date createdAt, Date updatedAt, Integer status) {
+        this.id = id;
+        this.courierId = courierId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -25,12 +37,29 @@ public class OrderList {
         this.phone = phone;
         this.rentTime = rentTime;
         this.deliveryDate = deliveryDate;
-        this.comment = comment;
+        this.track = track;
         this.color = color;
+        this.comment = comment;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.status = status;
     }
 
-    public OrderList() {
+    // Getters and Setters
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getCourierId() {
+        return courierId;
+    }
+
+    public void setCourierId(Integer courierId) {
+        this.courierId = courierId;
     }
 
     public String getFirstName() {
@@ -81,20 +110,20 @@ public class OrderList {
         this.rentTime = rentTime;
     }
 
-    public String getDeliveryDate() {
+    public Date getDeliveryDate() {
         return deliveryDate;
     }
 
-    public void setDeliveryDate(String deliveryDate) {
+    public void setDeliveryDate(Date deliveryDate) {
         this.deliveryDate = deliveryDate;
     }
 
-    public String getComment() {
-        return comment;
+    public Integer getTrack() {
+        return track;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setTrack(Integer track) {
+        this.track = track;
     }
 
     public List<String> getColor() {
@@ -105,11 +134,35 @@ public class OrderList {
         this.color = color;
     }
 
-    public Integer getTrack() {
-        return track;
+    public String getComment() {
+        return comment;
     }
 
-    public void setTrack(Integer track) {
-        this.track = track;
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 }

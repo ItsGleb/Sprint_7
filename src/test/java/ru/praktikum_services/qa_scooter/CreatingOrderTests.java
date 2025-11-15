@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import ru.praktikum_services.qa_scooter.POJO.OrderList;
+import ru.praktikum_services.qa_scooter.POJO.Order;
 import ru.praktikum_services.qa_scooter.steps.Steps;
 
 import java.net.HttpURLConnection;
@@ -15,14 +15,14 @@ import java.util.Arrays;
 import java.util.List;
 
 import static ru.praktikum_services.qa_scooter.constants.Constants.BASE_URL;
-import static ru.praktikum_services.qa_scooter.constants.Constants.CREATE_ORDER_PATH;
+import static ru.praktikum_services.qa_scooter.constants.Constants.CREATE_OR_GET_ORDER_PATH;
 import static ru.praktikum_services.qa_scooter.general_assert.GeneralAssert.*;
 
 
 @RunWith(Parameterized.class)
 public class CreatingOrderTests {
 
-    private OrderList orderList;
+    private Order order;
     private Steps steps;
 
     /* Параметры теста - объявляем как поля класса. Потому что в параметризованном тесте JUnit 4 параметры должны
@@ -123,10 +123,10 @@ public class CreatingOrderTests {
     @Test
     public void createOrderTest() {
         // Создаем заказ
-        orderList = new OrderList(firstName, lastName, address, metroStation, phone,
+        order = new Order(firstName, lastName, address, metroStation, phone,
                 rentTime, deliveryDate, comment, color);
         // Отправляем запрос
-        Response response = steps.createOrder(orderList, CREATE_ORDER_PATH);
+        Response response = steps.createOrder(order, CREATE_OR_GET_ORDER_PATH);
         // Проверяем статус-код
         assertStatusCode(expectedStatusCode, response);
         // Проверяем что содержит поле 'track'
