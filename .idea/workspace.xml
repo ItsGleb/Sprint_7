@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043c2332-70f1-4240-a43a-9ff77a0bf93e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/POJO/OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/POJO/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/steps/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum_services/qa_scooter/steps/Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingOrderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum_services/qa_scooter/CreatingOrderTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="043c2332-70f1-4240-a43a-9ff77a0bf93e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,26 +26,26 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="35EQvybPdnrfPOb6cVUxHs6XexM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.GetOrderListTest.getOrderListWithoutParamsOrdersIsNotEmptyTest.executor": "Run",
-    "JUnit.GetOrderListTest.getOrderListWithoutParamsTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/_YAP_rep/Sprint_7/Sprint_7"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.GetOrderListTest.getOrderListWithoutParamsOrdersIsNotEmptyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetOrderListTest.getOrderListWithoutParamsTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/_YAP_rep/Sprint_7/Sprint_7&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.GetOrderListTest.getOrderListWithoutParamsOrdersIsNotEmptyTest">
     <configuration name="CreatingACourierTests.courierCreationSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
