@@ -23,18 +23,120 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="35EQvybPdnrfPOb6cVUxHs6XexM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.GetOrderListTest.getOrderListWithoutParamsOrdersIsNotEmptyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetOrderListTest.getOrderListWithoutParamsTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/_YAP_rep/Sprint_7/Sprint_7&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="JUnit.GetOrderListTest.getOrderListWithoutParamsOrdersIsNotEmptyTest">
+    <configuration name="CreatingACourierTests.courierCreationSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.steps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingACourierTests" />
+      <option name="METHOD_NAME" value="courierCreationSuccessTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatingOrderTests.createOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.CreatingOrderTests" />
+      <option name="METHOD_NAME" value="createOrderTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOrderListTest.getOrderListWithoutParamsOrdersIsNotEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.GetOrderListTest" />
+      <option name="METHOD_NAME" value="getOrderListWithoutParamsOrdersIsNotEmptyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOrderListTest.getOrderListWithoutParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.GetOrderListTest" />
+      <option name="METHOD_NAME" value="getOrderListWithoutParamsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="СourierLoginTests.courierLoginSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum_services.qa_scooter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum_services.qa_scooter" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum_services.qa_scooter.СourierLoginTests" />
+      <option name="METHOD_NAME" value="courierLoginSuccessTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GetOrderListTest.getOrderListWithoutParamsOrdersIsNotEmptyTest" />
+        <item itemvalue="JUnit.GetOrderListTest.getOrderListWithoutParamsTest" />
+        <item itemvalue="JUnit.CreatingOrderTests.createOrderTest" />
+        <item itemvalue="JUnit.CreatingACourierTests.courierCreationSuccessTest" />
+        <item itemvalue="JUnit.СourierLoginTests.courierLoginSuccessTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
